@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>shopping</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Shopping <span style="color: rgb(69, 69, 185);"> logo</span></a>
+                <nav>
+                    <ul class="sign-info">
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                    <ul class="user-info">
+                        <li><a href="favorite.html"><i class="heart fas fa-heart" style="color: red;"></i></a></li>
+                        <li class="shop-logo">
+                            <i class="shop fas fa-shopping-cart"></i>
+                            <span class="num">0</span>
+                        </li>
+                        <li class="li-disapear"><a href="myProducts.html" style="text-decoration: underline;">My products</a></li>
+                        <li class="li-disapear" style="color: inherit;"><a href="profile.html" id="user"></a></li>
+                        <li>
+                            <i class="nav-i fas fa-bars">
+                                <ul class="user-info-small">
+                                    <li class="li-apear"><a href="profile.html" id="user2"></a></li>
+                                    <li class="li-apear"><a href="myProducts.html">My products</a></li>
+                                    <li class="shop-logo"><a href="cardProducts.html">My card</a></li>
+                                    <li><a href="favorite.html">My favorite</a></li>
+                                    <li class="logout" style="cursor: pointer;">Logout</li>
+                                </ul>
+                            </i>
+                        </li>
+                    </ul>
+                    
+                </nav>
+            </div>
+        </div>
+        <div class="card-product">
+            <h3>products</h3>
+            <div class="card-product-div" style="padding: 8px; margin: 10px 0;">
+                <table class="card-product-info">
+                    <tr>
+                        <th>Img</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </table>
+            </div>
+            <a href="cardProducts.html">View all products</a>
+        </div>
+    </header>
+    <!-- the products -->
+    <section class="home">
+        <div class="container flx">
+            <div class="searching">
+                <input type="search" id="search" placeholder="search by name">
+                <select id="filter">
+                    <option hidden>Filter By</option>
+                    <option value="all">All</option>
+                    <option value="watch">watch</option>
+                    <option value="devices">devices</option>
+                    <option value="furneture">furneture</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+            <div class="small-products">
+                <div class="small-product all">
+                    <h3 class="h3-title">All Products</h3>
+                    <div class="products">
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="small-product watch">
+                    <h3 class="h3-title">Some Watches</h3>
+                    <div class="products-infoo watch-product">
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="small-product devises">
+                    <h3 class="h3-title">Some Devices</h3>
+                    <div class="products-infoo devices-product">
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="small-product furneture">
+                    <h3 class="h3-title">Some Furneture</h3>
+                    <div class="products-infoo furneture-product">
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="small-product other">
+                    <h3 class="h3-title">Some Other Things</h3>
+                    <div class="products-infoo other-product">
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <a href="create.html" class="creating">
+            <i class="fa fa-plus"></i>
+        </a>
+    </section>
+
+    <script src="js/user.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

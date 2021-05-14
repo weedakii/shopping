@@ -1,0 +1,253 @@
+/* my profile  */
+.weedy{
+    display: flex;
+}
+
+.my-info{
+    padding: 10px;
+    padding-right: 0;
+}
+
+.my-info .small-info{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.small-info img{
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.small-info .disc{
+    padding: 5px;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    border-radius: 12px;
+    
+}
+
+.small-info span{
+    display: block;
+    background-color: white;
+    color: #444;
+    padding: 5px;
+    border-radius: 0 0 8px 8px;
+}
+
+.small-info span:first-child{
+    border-bottom: 1px solid rgb(186, 186, 186);
+    border-radius: 8px 8px 0 0;
+}
+
+.my-info button{
+    border: none;
+    background-color: white;
+    font-size: 30px;
+    padding: 5px;
+    display: none;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.my-info .pages p{
+    padding: 12px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    background-color: #ddd;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.my-info .pages p:hover{
+    background-color: rgba(216, 226, 225, 0.405);
+    margin-right: 0;
+    border: 0;
+    border-radius: 30px 0 0 30px;
+}
+
+.my-info .pages p:last-child{
+    margin-right: 8px;
+}
+
+.my-profile{
+    display: block;
+    background-color: rgba(216, 226, 225, 0.405);
+    padding: 7px;
+}
+
+.page{
+    padding: 10px;
+    border-bottom: 4px solid #111;
+}
+
+.my-profile h2{
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-right: 45%;
+    border-bottom: 4px solid rgb(102, 171, 179);
+    transition: margin-right 0.9s;
+}
+
+.my-profile h2:hover{
+    margin-right: 0;
+}
+
+.my-profile .profile-page img{
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.my-profile .profile-page span{
+    font-size: 14px;
+}
+
+.my-profile .profile-page p{
+    margin-left: 50px;
+    background-color: white;
+    color: #555;
+    padding: 5px;
+}
+
+.my-profile .profile-page h4{
+    font-weight: 500;
+}
+
+.my-profile .profile-page button.btn-g{
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+    background-color: rgba(9, 143, 9, 0.844);
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    color: rgb(235, 235, 235);
+    cursor: pointer;
+}
+
+.my-profile #nav-bar2{
+    display: none;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: 5px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.clear{
+    clear: both;
+    content: "";
+}
+
+@media only screen and (max-width: 719px) {
+    .my-info{
+        display: none;
+        position: absolute;
+        background-color: white;
+        margin-top: 1px;
+        width: 100%;
+    }
+    
+    .my-info .pages p:hover{
+        border-radius: 30px;
+    }
+    
+    .my-profile{
+        width: 100%;
+    }
+    
+    .my-profile #nav-bar2,
+    .my-info #nav-bar{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 720px){
+    .my-info{
+        display: block !important;
+        width: auto;
+    }
+}
+/* edit profile */
+#form-info{
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgb(132 132 132 / 73%);
+    border-radius: 10px;
+}
+
+#form-info input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 0;
+    width: 100%;
+    border-bottom: 1px solid #555;
+    outline: 0;
+    color: rgb(70, 70, 70);
+    font-size: 13px;
+    background-color: whitesmoke;
+}
+
+#form-info input[type="file"]{
+    padding: 70px 0% 70px 30%;
+    border: 3px dotted #333;
+}
+
+.last input{
+    font-size: 20px;
+    border: 1px solid #444;
+    cursor: pointer;
+    color: rgb(228, 228, 228);
+    background-color: rgb(66 40 187);
+    border-radius: 35px;
+}
+
+.last input:hover{
+    color: rgb(39, 38, 38);
+    background-color: rgb(218, 218, 218);
+    
+}
+
+/* footer */
+.footer{
+	background: #1c1d21;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.footer-list{
+	list-style: none;
+	margin: 10px 0;
+}
+
+.footer-list li{
+	display: inline-block;
+}
+
+.footer-list a{
+	display: block;
+	width: 35px;
+	height: 35px;
+	background: #6195ff;
+	color: #fff;
+	margin: 0 5px;
+	border-radius: 50%;
+}
+
+.footer-list a i{
+	line-height: 35px;
+    color: whitesmoke;
+}
+
+.footer p{
+	color: #999;
+	font-size: 15px;
+	text-transform: uppercase;
+}

@@ -1,0 +1,164 @@
+body{
+    background-color: rgba(228, 229, 247, 0.515);
+}
+
+.form2{
+    display: none;
+}
+.card{
+    width: 100%;
+    margin: 30px auto;
+    border-radius: 12px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
+}
+
+.card .title,p{
+    text-align: center;
+}
+
+.card p.fp{
+    margin: 10px 0;
+}
+
+p a{
+    font-size: medium;
+    color: rgb(76, 0, 252);
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.social button{
+    background: #fff;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 30px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    outline: none;
+}
+
+.social button.f-btn{
+    color: #fff;
+    background: #005dff;
+}
+
+.social img{
+    width: 35px;
+    margin-right: 12px;
+}
+
+.social .f-font{
+    font-size: 35px;
+    margin-right: 12px;
+}
+
+.or{
+    border-bottom: 1px solid rgb(124, 124, 124);
+    line-height: 0.1em;
+    margin: 30px 0 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.or span{
+    background: #fff;
+    padding: 0 5px;
+}
+
+form .email-login{
+    display: flex; 
+    flex-direction: column;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(56, 56, 56, 0.624);
+}
+
+.email-login input{
+    padding: 10px;
+    margin: 10px 0;
+    border: 0;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    outline: none;
+    font-size: 12px;
+}
+
+.email-login input[type="submit"]{
+    font-weight: bold;
+    color: #fff;
+    background: rgb(69, 69, 185);
+    border-radius: 30px;
+    border: 0;
+    font-size: large;
+    padding: 15px 0;
+    height: auto;
+    cursor: pointer;
+}
+
+.email-login input[type="submit"]:hover{
+    background: rgba(69, 69, 185, 0.926);
+}
+
+.email-login a{
+    display: block;
+    text-align: center;
+    color: rgb(76, 0, 252);
+    margin: 7px 0;
+    font-size: small;
+}
+
+@media only screen and (min-width: 600px) {
+    .card{
+        max-width: 800px;
+    }
+    .form1{
+        display: none;
+    }
+    .form2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .card .title,.card .fp{
+        text-align: left;
+    }
+
+    .social{
+        display: flex;
+        flex-direction: column;
+    }
+    .form2 .social{
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .or2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+    }
+
+    .or2 .sp1,.or2 .sp3{
+        border-right: 1px solid #333;
+        padding: 0px;
+        width: 0px;
+        height: 47%;
+    }
+    
+    .or2 .sp2{
+        background: #fff;
+        padding: 7px 0;
+    }
+
+    .form2 .email-login{
+        width: 100%;
+    }
+}

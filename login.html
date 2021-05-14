@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>shopping | login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Shopping <span style="color: rgb(69, 69, 185);">logo</span></a>
+                <nav>
+                    <ul class="sign-info">
+                        <li class="sign"><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="card">
+                <form id="forming">
+                    <h2 class="title">Log in</h2>
+                    <p class="fp">Create new account? <a href="register.html">Sign up</a></p>
+                    <div class="social">
+                        <button class="ggl-btn">
+                            <img src="img/ggl.png" alt="ggl img">
+                            continue with google
+                        </button>
+                        <button class="f-btn"><b class="f-font">f</b> continue with facebook
+                        </button>
+                    </div>
+                    <p class="or"><span>or</span></p>
+                    <div class="email-login">
+                        <input type="email" name="email" id="email" placeholder="Enter email" required>
+                        <input type="password" name="psw" id="psw" placeholder="Enter password" required>
+                        <input type="submit" value="Log in" id="sign-in">
+                        <a href="#"> Forgot password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/login.js "></script>
+</body>
+</html>

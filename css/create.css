@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(228 229 247 / 52%);
+}
+
+form{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgb(132 132 132 / 73%);
+    border-radius: 10px;
+}
+
+form input, select {
+    padding: 10px;
+    margin: 10px 0;
+    border: 0;
+    border-bottom: 1px solid #555;
+    outline: 0;color: rgb(70, 70, 70);
+    font-size: 13px;
+    background-color: whitesmoke;
+}
+
+input[type="file"]{
+    padding: 70px 0% 70px 30%;
+    border: 3px dotted #333;
+}
+
+form .pricing{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing #name{
+    width: 50%;
+}
+
+.pricing #price{
+    width: 35%;
+}
+
+form .last{
+    display: flex;
+    justify-content: space-between;
+}
+
+.last input{
+    width: 40%;
+    font-size: 20px;
+    border: 1px solid #444;
+    cursor: pointer;
+    color: rgb(228, 228, 228);
+    background-color: rgb(66 40 187);
+    border-radius: 35px;
+}
+
+.last input:hover{
+    color: rgb(39, 38, 38);
+    background-color: rgb(218, 218, 218);
+    
+}
+
+.last select{
+    width: 55%;
+    font-size: 20px;
+    border: 1px solid #666;
+    cursor: pointer;
+    border-radius: 20px;
+}

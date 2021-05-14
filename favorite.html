@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>shopping</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Shopping <span style="color: rgb(69, 69, 185);"> logo</span></a>
+                <nav>
+                    <ul class="sign-info">
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                    <ul class="user-info">
+                        <li><a href="favorite.html"><i class="heart fas fa-heart" style="color: red;"></i></a></li>
+                        <li class="shop-logo">
+                            <a href="cardProducts.html"><i class="shop fas fa-shopping-cart"></i></a>
+                        </li>
+                        <li class="li-disapear"><a href="myProducts.html" style="text-decoration: underline;">My products</a></li>
+                        <li class="li-disapear" style="color: inherit;"><a href="profile.html" id="user"></a></li>
+                        <li>
+                            <i class="nav-i fas fa-bars">
+                                <ul class="user-info-small">
+                                    <li class="li-apear"><a href="profile.html" id="user2"></a></li>
+                                    <li class="li-apear"><a href="myProducts.html">My products</a></li>
+                                    <li class="shop-logo"><a href="cardProducts.html">My card</a></li>
+                                    <li><a href="favorite.html">My favorite</a></li>
+                                    <li class="logout" style="cursor: pointer;">Logout</li>
+                                </ul>
+                            </i>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- the products -->
+    <section class="home">
+        <div class="container flx">
+            <h2 class="h2-style">Favorite Card</h2>
+            <div class="products">
+                <div class="clear"></div>
+            </div>
+            <div style="display: none;" class="no-item">
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="js/user.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/favorite.js"></script>
+</body>
+</html>
