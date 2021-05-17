@@ -66,7 +66,7 @@
     border-radius: 30px 0 0 30px;
 }
 
-.my-info .pages p:last-child{
+.my-info .pages p.logingout{
     margin-right: 8px;
 }
 
@@ -74,6 +74,7 @@
     display: block;
     background-color: rgba(216, 226, 225, 0.405);
     padding: 7px;
+    width: 100%;
 }
 
 .page{
