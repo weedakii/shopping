@@ -17,7 +17,6 @@ let watchProduct = document.querySelector(".watch-product");
 function drawWatch() {
     let produc = localStorage.getItem("shop-products") ?
     JSON.parse(localStorage.getItem("shop-products")) : productsMom;
-    produc.sort(function(a, b){return 0.5 - Math.random()});
     let myCard = produc.filter((item) => item.type === "watch")
     if (myCard.length > 4) {
         myCard = [
@@ -103,7 +102,7 @@ let deviceProduct = document.querySelector(".devices-product");
 function drawDevices() {
     let produc = localStorage.getItem("shop-products") ?
     JSON.parse(localStorage.getItem("shop-products")) : productsMom;
-    produc.sort(function(a, b){return 0.5 - Math.random()});
+    
     let myCard = produc.filter((item) => item.type === "devices")
     if (myCard.length > 4) {
         myCard = [
